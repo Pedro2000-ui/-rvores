@@ -43,5 +43,5 @@ O relatório Atual vai sendo atualizado e mostrado a cada mudança de amostra, j
 Existe uma função que gera números aleatórios e os retorna a cada nova execução de amostra. O intervalo de números randômicos gerados é baseado no número de nós pedido pelo usuário, através da fórmula: 
 - rand() % (100 * num) + 1 onde N é o números de Nós.
 
-Assim, caso o usuário peça amostras com árvores de 6 nós, o intervalo de números sorteados será de 1 a 600, diminuindo as chances de ser sorteado um número repetido. Para esse caso em específico as chances seriam de 0,16% de se repetir um número, pois 1/600 * 100 = 0,16%, ou seja, quanto maior o número de nós, menor a chance de ocorrer um caso de repetição.
+Assim, caso o usuário peça amostras com árvores de 6 nós, o intervalo de números sorteados será de 1 a 600, diminuindo as chances de serem sorteados números repetidos. Para esse caso em específico as chances seriam de 0,16% de se repetir um número, pois 1/600 * 100 = 0,16%, ou seja, quanto maior o número de nós, menor a chance de ocorrer um caso de repetição.
 
