@@ -128,7 +128,7 @@ void imprimirIdentAVL(AVL *raiz, int count) {
   printf("\n");
   imprimirIdentAVL(raiz->esq, count + 1);
 }
-void imprimeRelatorioAtualAvl(AVL *raiz, int somaAlturaAtualAvl) {
+void imprimeRelatorioAtualAvl(AVL *raiz, int alturaAtualAvl) {
   printf("\n\nÁrvore AVL: \n\n");
   imprimirIdentAVL(raiz, 0);
   printf("\n\tPreOrdemAVL: ");
@@ -137,7 +137,7 @@ void imprimeRelatorioAtualAvl(AVL *raiz, int somaAlturaAtualAvl) {
   emOrdemAVL(raiz);
   printf("\n\tPosOrdemAVL: ");
   posOrdemAVL(raiz);
-  printf("\n\tAltura AVL: %d", somaAlturaAtualAvl);
+  printf("\n\tAltura AVL: %d", alturaAtualAvl);
 }
 void imprimeRelatorioFinalAvl(double alturaGeralAvl, int amostras, double tempo) {
     printf("Altura Média AVL: %.2f ", alturaGeralAvl / amostras);

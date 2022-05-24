@@ -33,7 +33,7 @@ void avlFree(AVL * raiz);
 /* Libera a Memória da Árvore atual de forma recursiva */
 void imprimirIdentAVL(AVL *raiz, int count);
 /* Imprime a Árvore Atual de forma Indentada, parecida com um desenho real de uma Árvore */
-void imprimeRelatorioAtualAvl(AVL *raiz, int somaAlturaAtualAvl);
+void imprimeRelatorioAtualAvl(AVL *raiz, int alturaAtualAvl);
 /* Imprime o Relatório Atual da Árvore (reseta e imprime um novo relatório conforme troca a Amostra, 
 já que roda em um loop) */
 void imprimeRelatorioFinalAvl(double alturaGeralAvl, int amostras, double tempo);

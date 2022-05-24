@@ -82,7 +82,7 @@ void bstFree(BST * raiz) {
   
   free(raiz);
 }
-void imprimeRelatorioAtualBst(BST *raiz, int somaAlturaAtualBst) {
+void imprimeRelatorioAtualBst(BST *raiz, int alturaAtualBst) {
   printf("\n\nÁrvore BST: \n\n");
   imprimirIdentBST(raiz, 0);
   printf("\n\tPreOrdemBST: ");
@@ -91,7 +91,7 @@ void imprimeRelatorioAtualBst(BST *raiz, int somaAlturaAtualBst) {
   emOrdemBST(raiz);
   printf("\n\tPosOrdemBST: ");
   posOrdemBST(raiz);
-  printf("\n\tAltura BST: %d", somaAlturaAtualBst);
+  printf("\n\tAltura BST: %d", alturaAtualBst);
 }
 void imprimeRelatorioFinalBst(double alturaGeralBst, int amostras, double tempo) {
     printf("Altura Média BST: %.2f ", alturaGeralBst / amostras);

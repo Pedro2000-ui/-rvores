@@ -22,7 +22,6 @@ int main(void) {
     printf("\n");
     
     for(int i = 0; i < amostras; i++) {
-      int somaAlturaAtualAvl = 0; int somaAlturaAtualBst = 0;
       BST *auxBst = (BST *)malloc(sizeof(BST));
       AVL *auxAvl = (AVL *)malloc(sizeof(AVL));
       int *numeros;
@@ -49,14 +48,14 @@ int main(void) {
       fim = clock();
       tempo2 += (double) (fim - ini) / CLOCKS_PER_SEC;
       tempoGeral += tempo1 + tempo2;
-      somaAlturaAtualAvl += somaAlturaAtualAvl + getAlturaAvl(auxAvl);
-      somaAlturaGeralAvl += somaAlturaAtualAvl;
-     
-      somaAlturaAtualBst += somaAlturaAtualBst + calculaAlturaBst(auxBst);
-      somaAlturaGeralBst += somaAlturaAtualBst;
+      int alturaAtualAvl = getAlturaAvl(auxAvl);
+      int alturaAtualBst = calculaAlturaBst(auxBst);
+      
+      somaAlturaGeralAvl += alturaAtualAvl;
+      somaAlturaGeralBst += alturaAtualBst;
 
-      imprimeRelatorioAtualAvl(auxAvl, somaAlturaAtualAvl);
-      imprimeRelatorioAtualBst(auxBst, somaAlturaAtualBst);
+      imprimeRelatorioAtualAvl(auxAvl, alturaAtualAvl);
+      imprimeRelatorioAtualBst(auxBst, alturaAtualBst);
 
       free(numeros);
       bstFree(auxBst);
